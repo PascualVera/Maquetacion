@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e3f2ff;
+}
+/* header style */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #e6f4f1;
+  padding: 10px;
+  height: 120px;
+  width: 100vw;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  border-bottom: 3px solid #7fb6ac;
+  position: relative;
+  overflow: hidden;
+}
+.titulo {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.menu {
+  display: flex;
+  width: 320px;
+  height: 60px;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 25px 60px 8px 0px;
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+}
+.enlaces {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.enlaces:hover {
+  font-size: 27px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.main_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1200px;
+  background-image: url(Media/murcia/gachasmigas-de-mar-menor.png);
+  background-repeat: repeat;
+}
+.container_photo {
+  display: flex;
+  justify-content: center;
+  width: 320px;
+  height: 240px;
+  overflow: hidden;
+  margin: 5px;
+}
+.murcia {
+  max-width: 100%;
+  max-height: 240px;
+}
