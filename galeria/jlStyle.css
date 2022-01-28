@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e3f2ff;
+  background-image: url(Media/Fotos_JL/mundodesconocidoBackground.png);
+  height: 32vh;
+}
+/* header style */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #e6f4f1;
+  padding: 10px;
+  height: 16vh;
+  width: 100%;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  border-bottom: 3px solid #7fb6ac;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+.titulo {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+.menu {
+  display: flex;
+  width: 320px;
+  height: 60px;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 25px px 8px 0px;
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+}
+.enlaces {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.enlaces:hover {
+  font-size: 27px;
+}
+
+/*main style*/
+.main_container {
+  display: flex;
+  margin: 40px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container_jl {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-items: center;
+  max-width: 900px;
+  max-height: 720px;
+  overflow: hidden;
+  margin: 20px;
+  background-color: azure;
+  border: 1px solid azure;
+  border-radius: 0px 0px 5px 5px;
+}
+.jl_face {
+  width: 100%;
+  height: 100%;
+}
+.photo_description {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  padding-left: 10px;
+}
