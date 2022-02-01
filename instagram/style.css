@@ -90,6 +90,7 @@ img {
   padding-left: 10px;
   outline: none;
   margin-top: 10px;
+  font-size: 12px;
 }
 .boton {
   height: 30px;
@@ -192,4 +193,17 @@ a:active {
 .footer {
   width: 1875px;
   height: 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 12px;
+}
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  word-spacing: 8px;
 }
