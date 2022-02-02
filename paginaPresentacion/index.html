@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="top_page">
+      <div id="title_container" class="title_container">
+        <h1 class="title_top">Pascual Vera</h1>
+        <h3 class="subtitle">Web Designer and philanthropist</h3>
+        <button id="about" class="boton">About Me</button>
+      </div>
+      <article class="description">
+        <p>My name is Pascual and I'm a junior full-stack developer</p>
+        <p>
+          I was born in Murcia and was raised learning the most advanced
+          technologies.
+        </p>
+        <p>
+          Then I started working as a waiter, but I always felt that something
+          was gone.
+        </p>
+        <p>
+          Now my soul belongs to CSS and responsive systems, this is who I am...
+        </p>
+        <p>I am CssMan!!</p>
+        <button id="less" class="boton">Less</button>
+      </article>
+    </div>
+
+    <header class="header">
+      <nav class="menu">
+        <a class="links_header" href="#">Home</a>
+        <a class="links_header" href="#skills">Skills</a>
+        <a class="links_header" href="#proyects">Proyects</a>
+        <a class="links_header" href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main id="skills" class="container">
+      <div class="skills_description_container">
+        <article class="skills_description">
+          <p>
+            As a full-stack developer, I have a decent perform in this
+            technologies.
+          </p>
+          <p>
+            Also I have notions of Typescript, Photoshop and reached Diamond
+            rank in Overwatch.
+          </p>
+          <div class="animation"></div>
+        </article>
+      </div>
+      <article class="skills">
+        <div class="techs">
+          <h1 class="tech_titles">Front-end Tech</h1>
+          <section class="skills--child">
+            <i class="fab fa-html5 fa-8x"></i>
+            <h2 class="skill_title">HTML5</h2>
+          </section>
+          <section class="skills--child">
+            <i class="fab fa-css3-alt fa-8x"></i>
+            <h2 class="skill_title">CSS</h2>
+          </section>
+          <section class="skills--child">
+            <i class="fab fa-angular fa-8x"></i>
+            <h2 class="skill_title">Angular</h2>
+          </section>
+        </div>
+        <div class="techs">
+          <h1 class="tech_titles">Back-End Tech</h1>
+          <section class="skills--child">
+            <i class="fab fa-js-square fa-8x"></i>
+            <h2 class="skill_title">JavaScript</h2>
+          </section>
+          <section class="skills--child">
+            <i class="fab fa-node-js fa-8x"></i>
+            <h2 class="skill_title">Node JS</h2>
+          </section>
+        </div>
+        <div class="techs">
+          <h1 class="tech_titles">Support Tech</h1>
+          <section class="skills--child">
+            <i class="fab fa-git fa-8x"></i>
+            <h2 class="skill_title">GIT</h2>
+          </section>
+        </div>
+      </article>
+    </main>
+
+    <main id="proyects" class="proyects">
+      <article class="proyect_description">
+        <h1 class="proyects_title">This are my latest releases</h1>
+        <section class="proyects_info">
+          If you wish to know more, visit my
+          <a class="link_proyect" href="https://github.com/PascualVera/"
+            >github</a
+          >
+          or <a class="link_proyect" href="#contact">contact me</a> for a
+          meeting
+        </section>
+      </article>
+
+      <div class="proyects_container">
+        <figure class="img_container">
+          <img class="proyect_img" src="Media/nasa.jpg" alt="" />
+        </figure>
+        <figure class="img_container">
+          <img class="proyect_img" src="Media/google.jpg" alt="" />
+        </figure>
+        <figure class="img_container">
+          <img class="proyect_img" src="Media/spacex.png" alt="" />
+        </figure>
+      </div>
+    </main>
+
+    <main id="contact" class="contact">
+      <form class="contact_form" action="contact">
+        <input class="input" type="text" name="" id="" placeholder="Nombre" />
+        <input class="input" type="text" name="" id="" placeholder="Correo" />
+        <input class="input" type="text" name="" id="" placeholder="Teléfono" />
+        <input class="input" type="text" name="" id="" placeholder="Motivo" />
+        <button class="boton-form">Contactar</button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
