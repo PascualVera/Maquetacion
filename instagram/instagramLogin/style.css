@@ -215,8 +215,8 @@ a:active {
 /*responsive phone*/
 @media screen and (max-width: 400px) {
   .container {
-    width: 340px;
-    height: 600px;
+    max-width: 340px;
+    max-height: 600px;
   }
   .right_container {
     width: 300px;
@@ -241,8 +241,8 @@ a:active {
     padding: 10px;
   }
   .footer {
-    flex-direction: column;
-    width: 360px;
+    align-items: center;
+    max-width: 360px;
     height: 40px;
     margin-top: 20px;
   }

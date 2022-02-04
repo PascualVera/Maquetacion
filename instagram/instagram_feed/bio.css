@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.bio_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+.bio {
+  margin-top: 30px;
+  width: 935px;
+  height: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: relative;
+  border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+}
+.img_container_bio {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin-right: 40px;
+}
+.bio_img {
+  width: 168px;
+  height: 168px;
+  border-radius: 200px;
+}
+.fucking_puto_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/*-------------*/
+/*title*/
+
+.bio_title {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 30px;
+  gap: 20px;
+}
+
+.title {
+  font-size: 28px;
+  color: #262626;
+  font-weight: normal;
+}
+.title-boton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #0095f6;
+  border-radius: 5px;
+  width: 65px;
+  height: 30px;
+  text-decoration: none;
+}
+.seguidores {
+  display: flex;
+  width: 600px;
+  height: 30px;
+  position: absolute;
+  left: 330px;
+  top: 50px;
+  gap: 10px;
+}
+
+/*-------------------------------*/
+/*-------------------------------*/
+
+/*Bio*/
+.bio_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  height: 160px;
+  gap: 5px;
+}
+.body_info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.subtitle_info {
+  color: #8e8e8e;
+}
+.link_info {
+  text-decoration: none;
+  color: #00376b;
+  font-weight: bold;
+}
+
+.historias_container {
+  display: flex;
+  width: 965px;
+  height: 130px;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+.historias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+}
+.historias-img {
+  height: 100px;
+  width: 100%;
+  border-radius: 50px;
+  border: 2px solid rgba(var(--b6a, 219, 219, 219), 1);
+}
