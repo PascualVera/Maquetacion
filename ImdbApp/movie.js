@@ -1,24 +1,33 @@
-import { Professional } from "./professional";
-
 export class Movie {
   //Atributos
 
   //Constructor
-  constructor() {
-    this.title;
-    this.releaseYear;
-    this.nationality;
-    this.actors;
-    this.genre;
-    this.foto;
-    this.director;
-    this.writer;
-    this.language;
-    this.platform;
-    this.mainCharacterName;
-    this.producer;
-    this.distributor;
-    this.genre;
+  constructor(
+    title,
+    year,
+    pais,
+    genero,
+    fot,
+    director,
+    escritor,
+    idioma,
+    platform,
+    main,
+    producer,
+    distribuidor
+  ) {
+    this.title = title;
+    this.releaseYear = year;
+    this.nationality = pais;
+    this.genre = genero;
+    this.foto = fot;
+    this.director = director;
+    this.writer = escritor;
+    this.language = idioma;
+    this.platform = platform;
+    this.mainCharacterName = main;
+    this.producer = producer;
+    this.distributor = distribuidor;
   }
   //Public metods
   getStringActors() {

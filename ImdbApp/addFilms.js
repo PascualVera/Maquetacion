@@ -1,26 +1,49 @@
-import { IMDB } from "./imdb";
-import { Movie } from "./movie";
-import { Professional } from "./professional";
-import * as user from "readline-sync";
+import { Movie } from "./movie.js";
+import { IMDB } from "./imdb.js";
 
-//Lectura e instancia de imdbBBDD.json
-const fs = require("fs");
-let tempBBDD = fs.readFileSync("imdbBBDD.json", "utf-8");
-let object = JSON.parse(tempBBDD);
-let imdbBBDD = Object.setPrototypeOf(object, IMDB.prototype);
+//Variables
+let nombre = document.getElementById("nombre");
+let año = document.getElementById("año");
+let pais = document.getElementById("pais");
+let foto = document.getElementById("foto");
+let actores = document.getElementById("actores");
+let director = document.getElementById("director");
+let escritor = document.getElementById("escritor");
+let idioma = document.getElementById("lenguaje");
+let prota = document.getElementById("protagonista");
+let productor = document.getElementById("productor");
+let distribuidor = document.getElementById("distribuidor");
+let genero = document.getElementById("genero");
+let platform = document.getElementById("platform");
+let boton = document.getElementById("boton");
 
-for (let peliculas of imdbBBDD.peliculas) {
-  peliculas = Object.setPrototypeOf(peliculas, Movie.prototype);
-}
+let filmData = document.getElementById("film_database");
+let filmItem = document.getElementById("film_items");
+let database = new IMDB();
+boton.addEventListener("click", function () {
+  database.peliculas.push(
+    new Movie(
+      nombre.value,
+      año.value,
+      pais.value,
+      foto.value,
+      genero.value,
+      director.value,
+      escritor.value,
+      idioma.value,
+      platform.value,
+      prota.value,
+      productor.value,
+      distribuidor.value
+    )
+  );
 
-//readline config
-
-let titulo = user.question("Titulo: ");
-let año = user.question("Fecha de lanzamiento: ");
-let pais = user.question("Pais: ");
-let genero = user.question("Genero: ");
-
-//Añadir pelicula a imdbBBDD
-imdbBBDD.peliculas.push(new Movie(titulo, año, pais, genero));
-console.log(imdbBBDD);
-imdbBBDD.escribirEnFicheroJSON("imdbBBDD.json");
+  for (let i = 0; i < database.peliculas.length; i++) {
+    filmData.innerHTML += `<div class="film_items index${i}"></div>`;
+    for (const att in database.peliculas[i]) {
+      document.getElementsByClassName(
+        `index${i}`
+      ).innerHTML += `<span> ${att}: ${database.peliculas[i][att]}</span>`;
+    }
+  }
+});
